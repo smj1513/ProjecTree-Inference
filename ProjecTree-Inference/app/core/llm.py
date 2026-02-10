@@ -33,7 +33,7 @@ opendai_reasoning_llm = ChatOpenAI(
     max_retries=3, 
     base_url=settings.OPENAI_BASE_URL, 
     api_key=settings.AI_API_KEY,
-reasoning_effort="medium", 
+    reasoning_effort="medium", 
 )
 
 openai_nano_llm = ChatOpenAI(model="gpt-5-nano", 
