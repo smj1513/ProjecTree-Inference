@@ -174,10 +174,10 @@ GitHub 소셜 로그인을 구현하는 과정에서, 일부 사용자의 이메
 
 
 ### 포트폴리오 생성 페이지
-<img width="2842" height="1440" alt="포트폴리오3" src="https://github.com/user-attachments/assets/82761db3-623a-4a6c-a377-48194e087fd0" />
-<img width="2868" height="1460" alt="포트폴리오2" src="https://github.com/user-attachments/assets/0b8b3377-69c6-4420-8074-7ce8b83a7b33" />
-<img width="2876" height="1434" alt="포트폴리오" src="https://github.com/user-attachments/assets/0af7618b-c028-4eb7-8aa5-25ecbe429258" />
 <img width="2876" height="1470" alt="포트폴리오 페이지" src="https://github.com/user-attachments/assets/78396e50-8c80-43dc-add1-c41262d4f5ca" />
+<img width="2876" height="1434" alt="포트폴리오" src="https://github.com/user-attachments/assets/0af7618b-c028-4eb7-8aa5-25ecbe429258" />
+<img width="2868" height="1460" alt="포트폴리오2" src="https://github.com/user-attachments/assets/0b8b3377-69c6-4420-8074-7ce8b83a7b33" />
+<img width="2842" height="1440" alt="포트폴리오3" src="https://github.com/user-attachments/assets/82761db3-623a-4a6c-a377-48194e087fd0" />
 
 ### 기능명세서 페이지
 <img width="2124" height="1144" alt="기능명세서" src="https://github.com/user-attachments/assets/da8960e5-2110-44b1-9461-4264fbcf6bd1" />
