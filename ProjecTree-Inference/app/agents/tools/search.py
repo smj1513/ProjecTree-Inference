@@ -28,7 +28,7 @@ TRUSTED_DOMAINS = [
 
 
 @tool
-def restricted_search(query: str) -> str:
+def restricted_search(query: str, include_domains: list[str] = None) -> str:
     """
     한국 기술 블로그에서만 심층적인 기술 정보를 검색합니다.
     일반적인 웹 검색이 아닌, '기술 비교', 'Best Practices', '트러블슈팅 사례'를 찾을 때 필수적으로 사용해야 합니다.
@@ -51,10 +51,12 @@ def restricted_search(query: str) -> str:
     
     Args:
         query (str): 검색할 구체적인 기술 키워드 또는 질문 (반드시 한국어로 작성)
+        include_domains (list[str], optional): 검색을 제한할 도메인 목록. 미들웨어를 통해 주입됩니다.
     """
     try:
+        domains = include_domains if include_domains else TRUSTED_DOMAINS
         search_tool = TavilySearch(
-            include_domains=TRUSTED_DOMAINS,
+            include_domains=domains,
             search_depth="advanced",
             max_results=3  # 결과 개수 제한 (토큰 비용 최적화)
         )

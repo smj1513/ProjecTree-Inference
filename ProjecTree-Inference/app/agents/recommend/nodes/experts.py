@@ -24,21 +24,27 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 
+from app.agents.recommend.middleware import SearchDomainMiddleware
+
+# 도메인 정의
+from app.agents.tools.search import restricted_search, TRUSTED_DOMAINS
+
 llm = openai_mini_llm
 tools = [restricted_search, url_validator]
 
-def create_expert_agent(system_prompt: str):
+def create_expert_agent(system_prompt: str, middleware: list = None):
     return create_agent(
         llm, 
         tools, 
         system_prompt=system_prompt, 
-        response_format=ProviderStrategy(TechList)
+        response_format=ProviderStrategy(TechList),
+        middleware=middleware
     )
 
 
-frontend_executor = create_expert_agent(FE_SYSTEM_PROMPT)
-backend_executor = create_expert_agent(BE_SYSTEM_PROMPT)
-advance_executor = create_expert_agent(ADVANCE_SYSTEM_PROMPT)
+frontend_executor = create_expert_agent(FE_SYSTEM_PROMPT, middleware=[SearchDomainMiddleware(TRUSTED_DOMAINS)])
+backend_executor = create_expert_agent(BE_SYSTEM_PROMPT, middleware=[SearchDomainMiddleware(TRUSTED_DOMAINS)])
+advance_executor = create_expert_agent(ADVANCE_SYSTEM_PROMPT, middleware=[SearchDomainMiddleware(TRUSTED_DOMAINS)])
 
 
 def run_expert_node(state: RecommendationState, executor: Any, config: RunnableConfig = None):
