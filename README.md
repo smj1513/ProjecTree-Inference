@@ -155,6 +155,22 @@ GitHub 소셜 로그인을 구현하는 과정에서, 일부 사용자의 이메
 ### 워크스페이스 페이지
 <img width="2124" height="1186" alt="트리에디터" src="https://github.com/user-attachments/assets/821737ee-eb58-481c-b07e-b596f1d13a16" />
 <img width="2124" height="1144" alt="기능명세서" src="https://github.com/user-attachments/assets/8e55eee4-6366-4920-a19a-9d61678c0c01" />
+### 노드 상세 페이지
+<img width="2832" height="1468" alt="image" src="https://github.com/user-attachments/assets/6b08c6a4-d757-4e5a-b2e7-b4af3140ed91" />
+<img width="2842" height="1464" alt="image" src="https://github.com/user-attachments/assets/0bb24bec-c8db-49ab-b556-f45b11a1dd1c" />
+<img width="2268" height="1170" alt="image" src="https://github.com/user-attachments/assets/440333bc-e26a-408a-a988-e3d61455e88c" />
+
+### 노드 상세 설명 페이지 - 에픽
+<img width="2872" height="1422" alt="image" src="https://github.com/user-attachments/assets/4583adb6-3877-4d3d-b680-2afd7363205e" />
+
+### 노드 상세 설명 페이지 - 스토리
+<img width="2880" height="1464" alt="image" src="https://github.com/user-attachments/assets/43266f9f-c3b7-40ed-aa5c-6e2217110e25" />
+
+
+### 노드 상세 설명 페이지 - 태스크
+<img width="2260" height="1328" alt="image" src="https://github.com/user-attachments/assets/1872b2c2-4498-4b59-b556-5d8e3027ec7d" />
+
+
 
 ### 포트폴리오 생성 페이지
 <img width="2842" height="1440" alt="포트폴리오3" src="https://github.com/user-attachments/assets/82761db3-623a-4a6c-a377-48194e087fd0" />
