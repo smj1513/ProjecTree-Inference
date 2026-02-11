@@ -1,4 +1,4 @@
-# ProjecTree 포트폴리오
+# ProjecTree
 
 ## 개요
 ### 시스템의 목표
@@ -30,34 +30,7 @@ ProjecTree는 이러한 문제를 해결하기 위해 다음과 같은 가치를
 - AI 기반 포트폴리오 자동 생성: 사용자가 수행한 태스크와 기술적 메모를 분석하여 자동으로 포트폴리오 초안을 작성합니다.
 
 ## 프로젝트 구조
-```plaintext
-📦 ProjecTree-Inference
-├── 📂 app
-│   ├── 📂 agents                 # LangGraph 기반 에이전트 모듈
-│   │   ├── 📂 node               # 노드 생성 에이전트 (Epic/Story/Task)
-│   │   │   ├── 📂 nodes          # 실행 노드 (Fetch, Process, Creation)
-│   │   │   ├── 📜 graph.py       # 노드 생성 그래프 정의
-│   │   │   └── 📜 state.py
-│   │   ├── 📂 recommend          # 기술 스택 추천 에이전트
-│   │   │   ├── 📂 nodes          # 전문가 노드 (Frontend/Backend/Advance Expert)
-│   │   │   ├── 📜 graph.py       # 추천 그래프 정의
-│   │   │   └── 📜 state.py
-│   │   ├── 📂 portfolio          # 포트폴리오 생성 에이전트
-│   │   │   ├── 📂 nodes          # 필터링 및 생성 노드
-│   │   │   └── 📜 graph.py
-│   │   └── 📂 candidates         # 후보 노드 생성 에이전트
-│   ├── 📂 core                   # 핵심 공통 모듈
-│   │   ├── 📜 callback.py        # Custom Async Callback Handler (Real-time Feedback)
-│   │   ├── 📜 crdt_client.py     # CRDT 서버 연동 클라이언트
-│   │   └── 📜 node_messages.py   # 노드별 상태 메시지 설정
-│   ├── 📂 services               # 비즈니스 로직 계층
-│   │   ├── 📜 recommendation_service.py
-│   │   ├── 📜 node_service.py
-│   │   └── 📜 portfolio_service.py
-│   ├── 📂 api                    # API 엔드포인트
-│   └── 📂 db                     # DB 모델 및 리포지토리
-├── 📜 main.py
-```
+(배치 다이어그램 추가)
 
 ### 1. 기획 프로세스를 반영한 Context-Aware 에이전트 설계
 **문제 상황**
@@ -166,4 +139,30 @@ GitHub 소셜 로그인을 구현하는 과정에서, 일부 사용자의 이메
 
 
 ## 화면 시안
-(이미지 Placeholder)
+### 메인 화면
+<img width="2848" height="1446" alt="메인화면 1" src="https://github.com/user-attachments/assets/e1a7515c-c5eb-49d1-be42-71f8825899e4" />
+<img width="2846" height="1458" alt="메인화면 2" src="https://github.com/user-attachments/assets/d4f79b89-af06-45d2-8f70-7d3eaf6d0022" />
+<img width="2834" height="1448" alt="메인화면3" src="https://github.com/user-attachments/assets/f76f378e-a8eb-4aca-a0a3-51665e949223" />
+### 워크스페이스 페이지
+<img width="2124" height="1186" alt="트리에디터" src="https://github.com/user-attachments/assets/821737ee-eb58-481c-b07e-b596f1d13a16" />
+<img width="2124" height="1144" alt="기능명세서" src="https://github.com/user-attachments/assets/8e55eee4-6366-4920-a19a-9d61678c0c01" />
+### 포트폴리오 생성 페이지
+<img width="2842" height="1440" alt="포트폴리오3" src="https://github.com/user-attachments/assets/82761db3-623a-4a6c-a377-48194e087fd0" />
+<img width="2868" height="1460" alt="포트폴리오2" src="https://github.com/user-attachments/assets/0b8b3377-69c6-4420-8074-7ce8b83a7b33" />
+<img width="2876" height="1434" alt="포트폴리오" src="https://github.com/user-attachments/assets/0af7618b-c028-4eb7-8aa5-25ecbe429258" />
+<img width="2876" height="1470" alt="포트폴리오 페이지" src="https://github.com/user-attachments/assets/78396e50-8c80-43dc-add1-c41262d4f5ca" />
+### 기능명세서 페이지
+<img width="2124" height="1144" alt="기능명세서" src="https://github.com/user-attachments/assets/da8960e5-2110-44b1-9461-4264fbcf6bd1" />
+
+### 로그인 페이지
+<img width="2852" height="1458" alt="로그인 화면" src="https://github.com/user-attachments/assets/cabe631b-106d-428e-9aa4-2dede5db6557" />
+### 워크스페이스 생성
+<img width="2862" height="1448" alt="워크스페이스 생성" src="https://github.com/user-attachments/assets/8fd2822c-3c2b-4bf7-8efe-ff21feeb9e8b" />
+<img width="2854" height="1460" alt="워크스페이스 생성2" src="https://github.com/user-attachments/assets/f0e1927a-ae77-4e52-8fe5-e4571a62b834" />
+<img width="2852" height="1458" alt="워크스페이스 생성5" src="https://github.com/user-attachments/assets/e4bd16ff-f609-4b85-ae8f-158812fe52f4" />
+<img width="2864" height="1460" alt="워크스페이스 생성3" src="https://github.com/user-attachments/assets/581edb1b-70fd-44ad-ab9d-56076021c8b9" />
+<img width="2862" height="1466" alt="워크스페이스 생성4" src="https://github.com/user-attachments/assets/e1c6fbe4-e440-4ad3-bc30-f2e142176502" />
+<img width="2852" height="1472" alt="워크스페이스 생성6" src="https://github.com/user-attachments/assets/c3ea52a0-0dae-42fb-8e13-3379aab14e1c" />
+### 워크스페이스 라운지
+<img width="2868" height="1448" alt="워크스페이스라운지" src="https://github.com/user-attachments/assets/7ad67f98-4bef-4e06-8670-4121c4f6e253" />
+
