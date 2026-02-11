@@ -155,6 +155,7 @@ GitHub 소셜 로그인을 구현하는 과정에서, 일부 사용자의 이메
 ### 워크스페이스 페이지
 <img width="2124" height="1186" alt="트리에디터" src="https://github.com/user-attachments/assets/821737ee-eb58-481c-b07e-b596f1d13a16" />
 <img width="2124" height="1144" alt="기능명세서" src="https://github.com/user-attachments/assets/8e55eee4-6366-4920-a19a-9d61678c0c01" />
+
 ### 노드 상세 페이지
 <img width="2832" height="1468" alt="image" src="https://github.com/user-attachments/assets/6b08c6a4-d757-4e5a-b2e7-b4af3140ed91" />
 <img width="2842" height="1464" alt="image" src="https://github.com/user-attachments/assets/0bb24bec-c8db-49ab-b556-f45b11a1dd1c" />
